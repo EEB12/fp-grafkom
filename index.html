@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Orbitron:500|Roboto+Condensed">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png">
+    <title>Bloxerz</title>
+    <style>
+
+
+        canvas {
+            padding: 0;
+            margin: auto;
+            display: block;
+            width: 800px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          
+            border: 1px solid rgb(39, 38, 38);
+            border-radius: 15px;
+            width:1000px;
+            height: 1000px;
+            
+           
+            overflow: hidden;
+            
+        }
+    </style>
+  </head>
+
+  <body>
+    <section class="modal-container reset-modal-container">
+      <section class="modal">
+        You won!
+        <button type="button" class="modal-btn">Play again?</button>
+      </section>
+    </section>
+
+    <section class="modal-container about-modal-container">
+      <section class="modal">
+        Manipulate the block using your arrow keys to get it to slide into the square hole.
+        <button type="button" class="about-modal-btn"><i class="fas fa-close"></i></button>
+      </section>
+    </section>
+
+    <header>
+      <h1>Bloxerz</h1>
+      <section>Moves: <span class="scoreboard">0</span></section>
+      <button type="button" class="about open-about-btn">About</button>
+    </header>
+    <div id="root"></div>  
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="src/OrbitControls.js"></script>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

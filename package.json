@@ -1,0 +1,26 @@
+{
+  "name": "bloxy",
+  "description": "A 3D block game",
+  "author": "Terry O'Shea",
+  "license": "MIT",
+  "homepage": "https://terryoshea.github.io/bloxy",
+  "scripts": {
+    "deploy": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "dev:watch": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "3.4.1"
+  },
+  "dependencies": {
+    "three": "^0.103.0"
+  }
+}
