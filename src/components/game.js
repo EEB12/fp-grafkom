@@ -152,7 +152,7 @@ class Game {
     document.body.appendChild(this.renderer.domElement);
     // this.controls = new THREE.OrbitControls(camera, renderer.domElement);
     // Game statistics
-    this.level = 0;
+    this.level = 5;
     this.moves = 0;
     this.movesThisLevel = 0;
     this.scoreboard = document.querySelector(".scoreboard");
